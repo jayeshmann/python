@@ -1,11 +1,8 @@
-l = ['Cat', 'says', 'meow']
-print(l)
+l = []
 
-l.remove('says')
-l[1] = 'meows'
+n = int(input("Enter No. of elements: "))
 
-print(l)
+for i in range(n):
+    l.append([input(">"), int(input(">>"))])
 
-
-l = list(filter(lambda x: x if x == 'Cat' else '', l))
 print(l)
