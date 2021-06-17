@@ -6,6 +6,4 @@ def is_called():
     return is_returned
 
 
-new = is_called()
-
-new()
+new = is_called()()
