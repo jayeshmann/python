@@ -1,8 +1,6 @@
-l = []
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a+b+c)
 
-n = int(input("Enter No. of elements: "))
 
-for i in range(n):
-    l.append([input(">"), int(input(">>"))])
-
-print(l)
+adding(4, c=2, b=3)
+adding(4, 2, b=3)
