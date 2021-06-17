@@ -1,11 +1,15 @@
 
-def myFun(myList1, *args, **kwargs):
-    print(myList1)
-    print(args)
-    print(kwargs)
-    myList1.insert(0, 99)
+def single(text):
+    return f'{text}'
 
 
-myList2 = [2, 3]
-myFun(myList2[:], "meow", named="meow meow")
-print(myList2)
+def double(text):
+    return f'{text} {text}'
+
+
+def meow(func):
+    say = func("Meow")
+    print(say)
+
+
+meow(double)
