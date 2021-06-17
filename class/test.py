@@ -1,15 +1,11 @@
 
-def single(text):
-    return f'{text}'
+def is_called():
+    def is_returned():
+        print("Hello")
+
+    return is_returned
 
 
-def double(text):
-    return f'{text} {text}'
+new = is_called()
 
-
-def meow(func):
-    say = func("Meow")
-    print(say)
-
-
-meow(double)
+new()
