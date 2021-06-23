@@ -1,16 +1,11 @@
-def genFun():
-    yield 1
-    yield 2
-    yield 3
+alphabet = "google"
 
+index = 0
+print(f"In the string '{alphabet}'")
+for each_character in alphabet:
+    print(f"Character '{each_character}' has an index value of {index}")
+    index += 1
 
-x = genFun()
+a = alphabet.__iter__()
 
-print(x.__next__())
-print(x.__next__())
-print(x.__next__())
-
-meow = (x**3 for x in range(1, 8))
-
-for i in meow:
-    print(i)
+print(a.__next__())
