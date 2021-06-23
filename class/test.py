@@ -1,9 +1,11 @@
-
-def is_called():
-    def is_returned():
-        print("Hello")
-
-    return is_returned
+def genFun():
+    yield 1
+    yield 2
+    yield 3
 
 
-new = is_called()()
+x = genFun()
+
+print(x.__next__())
+print(x.__next__())
+print(x.__next__())
