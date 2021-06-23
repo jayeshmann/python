@@ -10,4 +10,7 @@ print(x.__next__())
 print(x.__next__())
 print(x.__next__())
 
-print((x**3 for x in range(1, 8)))
+meow = (x**3 for x in range(1, 8))
+
+for i in meow:
+    print(i)
