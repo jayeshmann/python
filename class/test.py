@@ -1,7 +1,8 @@
-String1 = "google"
-
+String1 = 'Amazon isn\'t good.'
 print(String1)
 
-del String1
+String2 = "Amazon isn't good."
+print(String2)
 
-# print(String1)    # String1 doesn't exist now
+String3 = '''Amazon isn't good.'''
+print(String3)
