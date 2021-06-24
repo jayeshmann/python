@@ -1,8 +1,10 @@
-String1 = r'Amazon India isn\'t good.'
-print(String1)
+str1 = ''
+str2 = 'meow'
 
-String2 = "Amazon India isn't good."
-print(String2)
+print(repr(str1 and str2))
 
-String3 = '''Amazon India isn't good.'''
-print(String3)
+print(repr(str2 and str1))
+
+print(repr(str1 or str2))
+
+print(repr(str2 or str1))
