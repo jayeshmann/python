@@ -1,11 +1,7 @@
-alphabet = "google"
+String1 = "google"
 
-index = 0
-print(f"In the string '{alphabet}'")
-for each_character in alphabet:
-    print(f"Character '{each_character}' has an index value of {index}")
-    index += 1
+print(String1)
 
-a = alphabet.__iter__()
+del String1
 
-print(a.__next__())
+# print(String1)    # String1 doesn't exist now
