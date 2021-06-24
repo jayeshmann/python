@@ -1,8 +1,8 @@
-String1 = 'Amazon isn\'t good.'
+String1 = r'Amazon India isn\'t good.'
 print(String1)
 
-String2 = "Amazon isn't good."
+String2 = "Amazon India isn't good."
 print(String2)
 
-String3 = '''Amazon isn't good.'''
+String3 = '''Amazon India isn't good.'''
 print(String3)
