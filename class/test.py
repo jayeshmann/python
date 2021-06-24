@@ -1,13 +1,9 @@
-str1 = ''
-str2 = 'meow'
+from itertools import chain
 
-print(bool(str1) == False)
-print(bool(str2) == True)
+test_list = ["meow", ' ', 'm', 'e', 'o', 'w']
 
-print(repr(str1 and str2))
+print(*test_list)
 
-print(repr(str2 and str1))
+res = list(chain.from_iterable(test_list))
 
-print(repr(str1 or str2))
-
-print(repr(str2 or str1))
+print(*res)
