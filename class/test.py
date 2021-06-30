@@ -1,9 +1,4 @@
-from itertools import chain
+dict1 = {"cat": "neko", "dog": "inu"}
 
-test_list = ["meow", ' ', 'm', 'e', 'o', 'w']
-
-print(test_list)
-
-res = list(chain.from_iterable(test_list))
-
-print(res)
+for japanese in dict1.values():
+    print(japanese)
