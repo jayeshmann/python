@@ -1,4 +1,9 @@
 dict1 = {"cat": "neko", "dog": "inu"}
 
-for japanese in dict1.values():
-    print(japanese)
+dog_popped = dict1.pop("dog")
+print(type(dict1))
+print("Dict after pop:", dict1)
+print("Pop:", dog_popped)
+
+dict1_str = str(dict1)
+print(type(dict1_str))
