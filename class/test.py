@@ -1,9 +1,10 @@
-dict1 = {"cat": "neko", "dog": "inu"}
+test_dict = {"Gfg": 2, "is": 1, "Best": 3}
 
-dog_popped = dict1.pop("dog")
-print(type(dict1))
-print("Dict after pop:", dict1)
-print("Pop:", dog_popped)
+print("Orig dict:", test_dict)
 
-dict1_str = str(dict1)
-print(type(dict1_str))
+dict_list = [{"for": 3, 'all': 7}, {'geeks': 10}, {'and': 1, 'CS': 9}]
+
+for dicts in dict_list:
+    test_dict.update(dicts)
+
+print("updated:", test_dict)
