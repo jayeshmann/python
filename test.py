@@ -1,2 +1,2 @@
-list1 = map(int, input("Enter numbers with commas: ").split(','))
-print("Greatest number in the list", max(list1))
+list1 = [1, "meow", "billi", 2, "cat", 3, "meows"]
+print("only int", list(filter(lambda x: type(x) == int, list1)))
