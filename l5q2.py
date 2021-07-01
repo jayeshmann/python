@@ -1,9 +1,14 @@
 # Program to Print the Characters Which Are Common in Two Strings
 
-a = 'abcde'
+a = 'abcdea'
 b = 'xyzab'
+a = set(a)
+
+list = []
 
 print("Common:")
 for i in a:
     if(i in b):
-        print(i)
+        list.append(i)
+
+print(*list)
