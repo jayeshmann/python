@@ -1,10 +1,7 @@
-from typing import List
-
-
 def mergeArrays(list1, list2):
     list1.extend(list2)
 
-    def quick_sort(unsorted_list) -> List:
+    def quick_sort(unsorted_list):
         if len(unsorted_list) < 2:
             return unsorted_list
         pivot = unsorted_list.pop()  # Use the last element as the first pivot
