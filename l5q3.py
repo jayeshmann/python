@@ -1,7 +1,7 @@
 def checkString(str1):
     vowels = ['a', 'e', 'i', 'o', 'u']
     consonants = [
-        x for x in 'b,c,d,f,g,h,i,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z'.split(',')]
+        chr(x) for x in range(97, 122) if chr(x) not in vowels]
     v, c, b, o = 0, 0, 0, 0
     for aChar in str1:
         if aChar in vowels:
