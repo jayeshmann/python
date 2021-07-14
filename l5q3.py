@@ -3,7 +3,7 @@ def checkString(str1):
     consonants = [
         chr(x) for x in range(97, 122) if chr(x) not in vowels]
     v, c, b, o = 0, 0, 0, 0
-    for aChar in str1:
+    for aChar in str1.lower():
         if aChar in vowels:
             v += 1
         elif aChar in consonants:
