@@ -1,36 +1,11 @@
-file1 = open("myfile.txt", "w")
+class Cat:
+    def __init__(self, breed='Persian'):
+        self.breed = breed
 
-L = ["This is Delhi \n", "This is Paris \n", "This is London \n"]
+    def getBreed(self):
+        return self.breed
 
-file1.write("Hello \n")
-file1.writelines(L)
-file1.close()
 
-file1 = open("myfile.txt", "r+")
+mew = Cat('Chartreux')
 
-print("Output of Read is")
-print(file1.read())
-print()
-
-file1.seek(0)
-print("Output of ReadLine is")
-print(file1.readline())
-print()
-
-file1.seek(0)
-print("Output of Read(9) is")
-print(file1.read(9))
-print()
-
-file1.seek(0)
-print("Output of ReadLine(9) is")
-print(file1.readline(9))
-print()
-
-file1.seek(0)
-
-print("Output of ReadLines is")
-print(file1.readlines())
-print()
-
-file1.close()
+print(f"{mew.getBreed()} cat")
