@@ -16,6 +16,6 @@ class WorldChampions(Football):
         print(f"{self.country} team is {self.no_of_times} times world champions.")
 
 
-germany = WorldChampions("Germany", "UEFA", 4)
+germany = WorldChampions()
 germany.fifa()
 germany.world_championship()
